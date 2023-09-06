@@ -1,0 +1,8 @@
+section{
+    display: flex;
+    margin: 10px auto;
+}
+
+button{
+    margin-left: 15px;
+}
