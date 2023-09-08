@@ -47,9 +47,8 @@ function success(id){
 function teste1(){
     const id = 1;
     let flag = false;
-    for(let i = 1 ; i < 5 ; i++){
-        console.log(i);
-        let retorno = buscaCortePorId(i);
+    for(let i = 0 ; i < 5 ; i++){
+        let retorno = buscaCortePorId(i+1);
         if(retorno == undefined){
             showAlert(1, 'Sua função não possui um retorno válido.');
             flag = true;
@@ -75,9 +74,8 @@ function teste1(){
 function teste2(){
     const id = 2;
     let flag = false;
-    for(let i = 1 ; i < 5 ; i++){
-        console.log(i);
-        let retorno = buscaBarbaPorId(i);
+    for(let i = 0 ; i < 5 ; i++){
+        let retorno = buscaBarbaPorId(i+1);
         if(retorno == undefined){
             flag = true;
             showAlert(2, 'Sua função não possui um retorno válido.');
