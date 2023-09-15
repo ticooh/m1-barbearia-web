@@ -188,8 +188,8 @@ function teste7(){
             valor: 20
         }
     ]
-    let teste1 = atualizaPedido(lista, 1, 25, 'teste1');
-    let teste2 = atualizaPedido(lista, 2, 30, 'teste2');
+    let teste1 = atualizarServico(lista, 1, 25, 'teste1');
+    let teste2 = atualizarServico(lista, 2, 30, 'teste2');
     if(teste1 == undefined || teste2 == undefined){
         danger(id);
         showAlert(7, 'Sua função não possui um retorno válido.');
