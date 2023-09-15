@@ -36,7 +36,7 @@ function retornaTodasBarbas() {
 function criaPedido(nomeCliente, corteId, barbaId) {
 }
 
-function atualizaPedido(lista, id, valor, tipo) {
+function atualizarServico(lista, id, valor, tipo) {
 }
 
 function calculaTotal(pedido) {
