@@ -150,23 +150,21 @@ function teste6(){
         danger(id);
     }else{
         let flag = false;
-        if( teste1.nome != 'Thiago' || 
-            teste1.pedidoCorte != 'Samurai' ||
-            teste1.pedidoCortePreco != 35 ||
-            teste1.pedidoBarba != 'Van Dyke' ||
-            teste1.pedidoBarbaPreco != 20
+        if( teste1.nome == 'Thiago' && 
+            teste1.pedidoCorte == 'Samurai' &&
+            teste1.pedidoCortePreco == 35 &&
+            teste1.pedidoBarba == 'Van Dyke' &&
+            teste1.pedidoBarbaPreco == 20 &&
+            teste2.nome == 'Felipe' &&
+            teste2.pedidoCorte == 'Militar' &&
+            teste2.pedidoCortePreco == 20 &&
+            teste2.pedidoBarba == 'Barba Média' &&
+            teste2.pedidoBarbaPreco == 20
         ){
-            flag == true;
-        }else if(teste2.nome != 'Felipe' || 
-            teste2.pedidoCorte != 'Militar' ||
-            teste2.pedidoCortePreco != 20 ||
-            teste2.pedidoBarba != 'Barba Média' ||
-            teste2.pedidoBarbaPreco != 20
-        ){
-            flag == true;
+            flag = true;
         }
 
-        if(flag){
+        if(!flag){
             showAlert(6, 'Sua função não está criando o pedido com o valores ou atributos esperados.');
             danger(id);
         }else{
