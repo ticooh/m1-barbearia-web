@@ -69,7 +69,7 @@ function teste1(){
     if(typeof retorno_nao_encontrado != 'string' && !flag){
         showAlert(1, 'Se o corte não for encontrado você deve retornar a string "Corte não encontrado"');
         flag = true;
-    }else if( (retorno_nao_encontrado.toLowerCase() !== 'corte não encontrado' || retorno_nao_encontrado.toLowerCase() !== 'corte nao encontrado') && !flag){
+    }else if( retorno_nao_encontrado.toLowerCase() !== 'corte não encontrado' && retorno_nao_encontrado.toLowerCase() !== 'corte nao encontrado' && !flag){
         showAlert(1, 'Se o corte não for encontrado você deve retornar "Corte não encontrado"');
         flag = true;
     }
@@ -106,7 +106,7 @@ function teste2(){
     if(typeof retorno_nao_encontrado != 'string' && !flag){
         showAlert(2, 'Se a barba não for encontrada você deve retornar a string "Barba não encontrada"');
         flag = true;
-    }else if( (retorno_nao_encontrado.toLowerCase() !== 'barba não encontrada' || retorno_nao_encontrado.toLowerCase() !== 'barba nao encontrado') && !flag){
+    }else if( retorno_nao_encontrado.toLowerCase() !== 'barba não encontrada' && retorno_nao_encontrado.toLowerCase() !== 'barba nao encontrada' && !flag){
         showAlert(2, 'Se a barba não for encontrada você deve retornar "Barba não encontrada"');
         flag = true;
     }
